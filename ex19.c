@@ -1,12 +1,14 @@
 #include <stdio.h>
-void stampaOperazione()
+void somma(int a, int b)
 {
-    int x;
-    int y;
-    int z;
-    printf("Scegli due numeri.\n");
-    scanf("%d", &x);
-    scanf("%d", &y);
-    printf("Scegli l'operazione da eseguire.");
-    scanf("%d", &z);
+    printf("somma: %d \n", a + b);
 }
+int main()
+{
+int x = 5;
+int y = 7;
+somma(x, y);
+
+return(0);
+}
+
