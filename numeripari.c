@@ -1,11 +1,20 @@
 #include <stdio.h>
-int main ()
+void controlloPari(int x)
 {
-    int x=102;
-    while(x>0)
+    if(x%2==0)
     {
-        x=x-2;
-        printf("%d \n", x);
+        printf("Il numero è pari. \n");
     }
+    else
+    {
+        printf("Il numero è dispari. \n");
+    }
+}
+int main()
+{
+    int x;
+    printf("Inserisci un numero e scopri se è pari o dispari. \n");
+    scanf("%d", &x);
+    controlloPari(x);
     return(0);
 }
